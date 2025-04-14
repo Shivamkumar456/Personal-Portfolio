@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mint: {
+                            400: "#98FB98",
+                            500: "#50C878",
+                            600: "#3DAA60"
+                        },
+                        lavender: {
+                            300: "#E6E6FA",
+                            400: "#D8BFD8"
+                        },
+                        dark: "#2D2A32"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+
+        /* Smooth transitions between sections */
+        .gradient-transition {
+            background: linear-gradient(to bottom, var(--tw-gradient-stops));
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-gray-100">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 z-50 bg-gray-900 shadow-2xl py-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-10">
+            <h1 class="text-4xl font-extrabold text-white">My Portfolio</h1>
+            <ul class="hidden md:flex space-x-12 text-white font-semibold text-dark">
+                <li><a href="#about" class="hover:text-yellow-300 transition">About</a></li>
+                <li><a href="#projects" class="hover:text-yellow-300 transition">Projects</a></li>
+                <li><a href="#skills" class="hover:text-yellow-300 transition">Skills</a></li>
+                <li><a href="#resume" class="hover:text-yellow-300 transition">My Resume</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center px-6 gradient-transition"
+        style="--tw-gradient-stops: #E57373, #E57373;">
+        <h2 class="text-6xl font-extrabold text-teal-700">Hi, I'm <span class="text-teal-700   ">Badal Kumar Aman</span></h2>
+        <p class="mt-5 text-2xl max-w-2xl text-gray-700">Web Developer | Designer | Learner</p>
+        <a href="#projects"
+            class="mt-6 px-10 py-4 bg-cyan-700 text-white text-lg font-bold rounded-xl shadow-xl hover:bg-cyan-900 transition">View
+            My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="p-32 gradient-transition" style="--tw-gradient-stops: #2A4AB0, #2A4AB0;">
+        <h3 class="text-5xl font-extrabold text-center mb-12 text-mint-400">About Me</h3>
+        <p class="text-lg text-orange-300 text-center max-w-3xl mx-auto">I am a passionate web developer with experience
+            in creating dynamic and responsive websites. I love solving problems and bringing creative ideas to life
+            through code.
+        </p>
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="p-32 gradient-transition" style="--tw-gradient-stops: #E57373, #E57373;">
+        <h3 class="text-5xl font-extrabold text-center mb-12 text-teal-700">Skills</h3>
+        <div class="grid md:grid-cols-3  gap-10 text-center">
+            <div class="bg-cyan-700 p-8 rounded-xl shadow-lg">
+                <h4 class="text-3xl font-bold text-mint-400">Frontend Development</h4>
+                <p class="mt-4 text-white">HTML, CSS, Tailwind CSS</p>
+            </div>
+            <div class="bg-cyan-700 p-8 rounded-xl shadow-lg">
+                <h4 class="text-3xl font-bold text-mint-400">Backend Development</h4>
+                <p class="mt-4 text-white">C,C++, PHP, MySQL, Laravel</p>
+            </div>
+            <div class="bg-cyan-700 p-8 rounded-xl shadow-lg">
+                <h4 class="text-3xl font-bold text-mint-400">Graphics Design</h4>
+                <p class="mt-4 text-white">CorelDraw</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="p-32 gradient-transition" style="--tw-gradient-stops: #2A4AB0, #2A4AB0;">
+        <h3 class="text-5xl font-extrabold text-center mb-12 text-mint-400">Projects</h3>
+        <div class="flex flex-wrap justify-center gap-12">
+            <div
+                class="bg-orange-300 p-10 rounded-xl shadow-xl transform transition hover:scale-105 hover:shadow-2xl w-96">
+                <h4 class="text-3xl font-bold text-fuchsia-700">Tic Tac Toe</h4>
+                <p class="mt-4 text-gray-900">Developed an interactive Tic Tac Toe game using HTML, CSS, and JavaScript with real-time win detection and responsive design.</p>
+                <a href="https://badal07aman07kahalgaon.github.io/Tic-Tac-Toe/"
+                    class="mt-5 inline-block text-fuchsia-900 hover:text-lavender-200 transition">View Details →</a>
+            </div>
+            <div
+                class="bg-orange-300 p-10 rounded-xl shadow-xl transform transition hover:scale-105 hover:shadow-2xl w-96">
+                <h4 class="text-3xl font-bold text-fuchsia-700">Interactive Stopwatch</h4>
+                <p class="mt-4 text-gray-900">A stopwatch app with start, pause, reset, and lap features.</p>
+                <a href="https://badal07aman07kahalgaon.github.io/StopWatch/"
+                    class="mt-5 inline-block text-fuchsia-900 hover:text-lavender-200 transition">View Details →</a>
+            </div>
+            <div
+                class="bg-orange-300 p-10 rounded-xl shadow-xl transform transition hover:scale-105 hover:shadow-2xl w-96">
+                <h4 class="text-3xl font-bold text-fuchsia-700">Calculator</h4>
+                <p class="mt-4 text-gray-900">Developed a simple calculator for basic arithmetic operations using HTML,
+                    CSS, and JavaScript.</p>
+                <a href="https://badal07aman07kahalgaon.github.io/Calculator/"
+                    class="mt-5 inline-block text-fuchsia-900 hover:text-lavender-200 transition">View Details →</a>
+            </div>
+            <div
+                class="bg-orange-300 p-10 rounded-xl shadow-xl transform transition hover:scale-105 hover:shadow-2xl w-96">
+                <h4 class="text-3xl font-bold text-fuchsia-700">Personal Portfolio</h4>
+                <p class="mt-4 text-gray-900">Developed a personal portfolio website to showcase skills, projects, and
+                    About Me using HTML, Tailwind CSS.</p>
+                <a href="#" class="mt-5 inline-block text-fuchsia-900 hover:text-lavender-200 transition">View Details
+                    →</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Resume Download Section -->
+    <section id="resume" class="text-center p-32 gradient-transition" style="--tw-gradient-stops: #E57373, #E57373;">
+        <h3 class="text-5xl font-extrabold text-teal-700 mb-6">Download My Resume</h3>
+        <a href="Badal_Resume.pdf"
+            class="px-8 py-3 bg-cyan-700 text-white font-bold rounded-xl hover:bg-cyan-900 transition">Download PDF</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-32 gradient-transition" style="--tw-gradient-stops: #2A4AB0, #2A4AB0;">
+        <h3 class="text-5xl font-extrabold text-center mb-10 text-mint-400">Contact Me</h3>
+        <form class="max-w-lg mx-auto bg-orange-300 p-10 rounded-2xl shadow-xl">
+            <input type="text" placeholder="Your Name"
+                class="w-full p-4 mb-4 bg-orange-100 border border-gray-600 rounded-lg text-black">
+            <input type="email" placeholder="Your Email"
+                class="w-full p-4 mb-4 bg-orange-100 border border-gray-600 rounded-lg text-black">
+            <textarea placeholder="Your Message"
+                class="w-full p-4 mb-4 bg-orange-100 border border-gray-600 rounded-lg text-black"></textarea>
+            <button class="w-full bg-cyan-700 text-white p-4 rounded-lg font-bold hover:bg-cyan-900 transition">Send
+                Message</button>
+        </form>
+    </section>
+
+    <footer class="p-6 bg-gray-900 text-center text-white">
+        <p class="text-lg font-semibold">© 2025 MyPortfolio. All rights reserved.</p>
+        <p class="text-md text-gray-400">Designed with ❤️ by <span class="font-bold text-orange-300">Badal Kumar Aman</span>
+        </p>
+
+        <!-- Social Icons -->
+        <div class="mt-4 flex justify-center space-x-6">
+            <a href="https://www.linkedin.com/in/badal-kumar-1708h/" target="_blank"
+                class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-blue-400 text-blue-400 text-3xl hover:bg-blue-400 hover:text-white transition duration-300"
+                title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/Badal07aman07kahalgaon?tab=repositories" target="_blank"
+                class="w-12 h-12 flex items-center justify-center rounded-full border-2 border-gray-400 text-gray-400 text-3xl hover:bg-gray-400 hover:text-black transition duration-300"
+                title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
